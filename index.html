@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Nilai Siswa - Versi Lanjutan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📘 Kalkulator Nilai Siswa</h1>
+    <button id="darkModeToggle">🌙 Mode Gelap</button>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Masukkan Nilai</h2>
+
+      <label>Nilai Tugas:</label>
+      <input type="number" id="tugas" placeholder="0 - 100" />
+
+      <label>Nilai UTS:</label>
+      <input type="number" id="uts" placeholder="0 - 100" />
+
+      <label>Nilai UAS:</label>
+      <input type="number" id="uas" placeholder="0 - 100" />
+
+      <button onclick="hitungNilai()">Hitung Nilai Akhir</button>
+      <button onclick="resetNilai()">🔄 Reset Data</button>
+    </section>
+
+    <section class="hasil-section">
+      <h2>Hasil</h2>
+      <p id="hasil">Masukkan nilai untuk melihat hasil.</p>
+      <button id="printButton" onclick="cetakNilai()">🖨️ Cetak Nilai</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Kalkulator Nilai Sekolah Versi Lanjutan 💙</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
