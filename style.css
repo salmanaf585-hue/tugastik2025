@@ -1,0 +1,101 @@
+:root {
+  --bg-color: #f0f6ff;
+  --text-color: #333;
+  --card-bg: white;
+  --primary: #0078ff;
+}
+
+body.dark {
+  --bg-color: #1c1c1c;
+  --text-color: #f5f5f5;
+  --card-bg: #2a2a2a;
+  --primary: #00bcd4;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  color: white;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+#darkModeToggle {
+  background: white;
+  color: var(--primary);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+main {
+  max-width: 500px;
+  margin: 30px auto;
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 15px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.hasil-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#hasil {
+  font-size: 18px;
+  background-color: #e8f2ff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+body.dark #hasil {
+  background-color: #333;
+}
+
+#printButton {
+  display: none;
+  width: 100%;
+}
